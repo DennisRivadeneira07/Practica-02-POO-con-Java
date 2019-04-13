@@ -5,9 +5,16 @@
  */
 package ec.edu.ups.interfaces;
 
+
 /**
- *
- * @author LENOVO
+ *Interface 
+ * 
+ * Clase que nos permitira implementar los metodos abstractos de las clases hija. 
+ * 
+ * @author Dennnis Andrés Rivadeneira Cabrera
+ * @since 2019
+ * @version 2.0
+ * @see https://github.com/DennisRivadeneira07/Practica-02-POO-con-Java.git
  */
 public interface Interface {
     
