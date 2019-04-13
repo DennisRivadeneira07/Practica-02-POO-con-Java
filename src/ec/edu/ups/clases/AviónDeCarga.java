@@ -1,4 +1,4 @@
-
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -12,7 +12,7 @@ import ec.edu.ups.interfaces.Interface;
  * @author LENOVO
  */
 public class AviónDeCarga extends Avión implements Interface {
-    private double pesoDeCarga;
+    private String pesoDeCarga;
     private int cantidadDeCargaUnidades;
     private String tipoDeCarga;
     private int codigoDeCarga;
@@ -20,7 +20,7 @@ public class AviónDeCarga extends Avión implements Interface {
     public AviónDeCarga(){        
     }
 
-    public AviónDeCarga(double pesoDeCarga, int cantidadDeCargaUnidades, String tipoDeCarga, int codigoDeCarga, int numeroDeAlas, int numeroDeAzafatas, double horasServicioDeCommida, String categoriaSocial, int numeroTurbinas, int numroPasajeros, double costoDeVuelo, int numeroTripulantes, double alturaDeVuelo) {
+    public AviónDeCarga(String pesoDeCarga, int cantidadDeCargaUnidades, String tipoDeCarga, int codigoDeCarga, int numeroDeAlas, int numeroDeAzafatas, String horasServicioDeCommida, String categoriaSocial, int numeroTurbinas, int numroPasajeros, String costoDeVuelo, int numeroTripulantes, String alturaDeVuelo) {
         super(numeroDeAlas, numeroDeAzafatas, horasServicioDeCommida, categoriaSocial, numeroTurbinas, numroPasajeros, costoDeVuelo, numeroTripulantes, alturaDeVuelo);
         this.pesoDeCarga = pesoDeCarga;
         this.cantidadDeCargaUnidades = cantidadDeCargaUnidades;
@@ -28,14 +28,14 @@ public class AviónDeCarga extends Avión implements Interface {
         this.codigoDeCarga = codigoDeCarga;
     }
 
-    public AviónDeCarga(double pesoDeCarga, int cantidadDeCargaUnidades, String tipoDeCarga, int codigoDeCarga) {
+    public AviónDeCarga(String pesoDeCarga, int cantidadDeCargaUnidades, String tipoDeCarga, int codigoDeCarga) {
         this.pesoDeCarga = pesoDeCarga;
         this.cantidadDeCargaUnidades = cantidadDeCargaUnidades;
         this.tipoDeCarga = tipoDeCarga;
         this.codigoDeCarga = codigoDeCarga;
     }
     
-    public void setPesoDeCarga(double pesoDeCarga) {
+    public void setPesoDeCarga(String pesoDeCarga) {
         this.pesoDeCarga = pesoDeCarga;
     }
 
@@ -51,7 +51,7 @@ public class AviónDeCarga extends Avión implements Interface {
         this.codigoDeCarga = codigoDeCarga;
     }
 
-    public double getPesoDeCarga() {
+    public String getPesoDeCarga() {
         return pesoDeCarga;
     }
 
@@ -82,7 +82,8 @@ public class AviónDeCarga extends Avión implements Interface {
     }
     @Override
     public String toString() {
-        return super.toString() +"\n Avi\u00f3nDeCarga{ \n" + "\n pesoDeCarga : \n" + pesoDeCarga + "\n cantidadDeCargaUnidades :\n" + cantidadDeCargaUnidades + "\n tipoDeCarga: \n" + tipoDeCarga + "\n codigoDeCarga \n" + codigoDeCarga + '}';
+        System.out.println();
+        return super.toString() +"\n Avi\u00f3nDeCarga{ \n" + "\nPESO DE CARGA :\n" + pesoDeCarga + "\nCANTIDAD DE CARGA EN UNIDADES :\n" + cantidadDeCargaUnidades + "\nTIPO DE CARGA : \n" + tipoDeCarga + "\nCODIGO DE CARGA :\n" + codigoDeCarga + '}';
     } 
 
    

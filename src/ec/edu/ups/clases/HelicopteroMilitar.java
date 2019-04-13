@@ -22,7 +22,7 @@ public class HelicopteroMilitar extends Helicoptero implements Interface {
 
     }
 
-    public HelicopteroMilitar(int numeroArmasEquipadasUnidades, String tipoHelicopteroMilitar, String nombreFrancoTirador, int cantidadDeMilitaresTransportados, int númeroDeHelices, int codigoPatinAterrizaje, int codigoAletaDesviación, String marcaRotorAntipar, int numeroTurbinas, int numroPasajeros, double costoDeVuelo, int numeroTripulantes, double alturaDeVuelo) {
+    public HelicopteroMilitar(int numeroArmasEquipadasUnidades, String tipoHelicopteroMilitar, String nombreFrancoTirador, int cantidadDeMilitaresTransportados, int númeroDeHelices, int codigoPatinAterrizaje, int codigoAletaDesviación, String marcaRotorAntipar, int numeroTurbinas, int numroPasajeros, String costoDeVuelo, int numeroTripulantes, String alturaDeVuelo) {
         super(númeroDeHelices, codigoPatinAterrizaje, codigoAletaDesviación, marcaRotorAntipar, numeroTurbinas, numroPasajeros, costoDeVuelo, numeroTripulantes, alturaDeVuelo);
         this.numeroArmasEquipadasUnidades = numeroArmasEquipadasUnidades;
         this.tipoHelicopteroMilitar = tipoHelicopteroMilitar;
@@ -84,9 +84,8 @@ public class HelicopteroMilitar extends Helicoptero implements Interface {
     }
     @Override
     public String toString() {
-        return super.toString() + "\n HelicopteroMilitar{ \n" + "\n numeroArmasEquipadasUnidades : \n" + numeroArmasEquipadasUnidades + "\n tipoHelicopteroMilitar: \n" + tipoHelicopteroMilitar + "\n nombreFrancoTirador :\n" + nombreFrancoTirador + "\n cantidadDeMilitaresTransportados :\n" + cantidadDeMilitaresTransportados + '}';
+        System.out.println();
+        return super.toString() + "\n HelicopteroMilitar{ \n" + "\n NÚMERO DE ARMAS EQUIPADAS EN UNIDADES :\n" + numeroArmasEquipadasUnidades + "\n TIPO DE HELICOPTERO MILITAR :\n" + tipoHelicopteroMilitar + "\nNOMBRE DE FRANCOTIRADOR :\n" + nombreFrancoTirador + "\nCANTIDAD DE MILITARES TRANSPORTADOS :\n" + cantidadDeMilitaresTransportados + '}';
     }
-
-   
 
 }

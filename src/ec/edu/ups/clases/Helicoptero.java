@@ -20,7 +20,7 @@ public Helicoptero(){
     
 }
 
-    public Helicoptero(int númeroDeHelices, int codigoPatinAterrizaje, int codigoAletaDesviación, String marcaRotorAntipar, int numeroTurbinas, int numroPasajeros, double costoDeVuelo, int numeroTripulantes, double alturaDeVuelo) {
+    public Helicoptero(int númeroDeHelices, int codigoPatinAterrizaje, int codigoAletaDesviación, String marcaRotorAntipar, int numeroTurbinas, int numroPasajeros, String costoDeVuelo, int numeroTripulantes, String alturaDeVuelo) {
         super(numeroTurbinas, numroPasajeros, costoDeVuelo, numeroTripulantes, alturaDeVuelo);
         this.númeroDeHelices = númeroDeHelices;
         this.codigoPatinAterrizaje = codigoPatinAterrizaje;
@@ -72,7 +72,8 @@ public Helicoptero(){
     
     @Override
     public String toString() {
-        return super.toString()+"\n Helicoptero \n" + " \n n\u00fameroDeHelices :\n" + númeroDeHelices + "\n codigoPatinAterrizaje :\n" + codigoPatinAterrizaje + "\n codigoAletaDesviaci\u00f3n :\n" + codigoAletaDesviación + "\n marcaRotorAntipar \n" + marcaRotorAntipar + '}';
+        System.out.println();
+        return super.toString()+"\n HELICOPTERO \n" + " \nNÚMERO DE HELICES :\n" + númeroDeHelices + "\nCODIGO DE PATIN DE ATERRIZAJE :\n" + codigoPatinAterrizaje + "\n CODIGO ALETA DE DESVIACIÓN :\n" + codigoAletaDesviación + "\nMARCA DE ROTOR ANTIPAR :\n" + marcaRotorAntipar + '}';
     }
 
     

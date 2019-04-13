@@ -12,13 +12,13 @@ package ec.edu.ups.clases;
 public class MedioTransporteAereo {
      private int numeroTurbinas;
      private int numroPasajeros;
-     private double costoDeVuelo;
+     private String costoDeVuelo;
      private int numeroTripulantes;
-     private double alturaDeVuelo;   
+     private String alturaDeVuelo;   
 
     public MedioTransporteAereo() {
     }
-    public MedioTransporteAereo(int numeroTurbinas, int numroPasajeros, double costoDeVuelo, int numeroTripulantes, double alturaDeVuelo) {
+    public MedioTransporteAereo(int numeroTurbinas, int numroPasajeros, String costoDeVuelo, int numeroTripulantes, String alturaDeVuelos) {
         this.numeroTurbinas = numeroTurbinas;
         this.numroPasajeros = numroPasajeros;
         this.costoDeVuelo = costoDeVuelo;
@@ -35,7 +35,7 @@ public class MedioTransporteAereo {
         this.numroPasajeros = numroPasajeros;
     }
 
-    public void setCostoDeVuelo(double costoDeVuelo) {
+    public void setCostoDeVuelo(String costoDeVuelo) {
         this.costoDeVuelo = costoDeVuelo;
     }
 
@@ -43,7 +43,7 @@ public class MedioTransporteAereo {
         this.numeroTripulantes = numeroTripulantes;
     }
 
-    public void setAlturaDeVuelo(double alturaDeVuelo) {
+    public void setAlturaDeVuelo(String alturaDeVuelo) {
         this.alturaDeVuelo = alturaDeVuelo;
     }
 
@@ -55,7 +55,7 @@ public class MedioTransporteAereo {
         return numroPasajeros;
     }
 
-    public double getCostoDeVuelo() {
+    public String getCostoDeVuelo() {
         return costoDeVuelo;
     }
 
@@ -63,13 +63,13 @@ public class MedioTransporteAereo {
         return numeroTripulantes;
     }
 
-    public double getAlturaDeVuelo() {
+    public String getAlturaDeVuelo() {
         return alturaDeVuelo;
     }
 
     @Override
     public String toString() {
-        return "\n MedioTransporteAereo{ \n" + "\n numeroTurbinas \n" + numeroTurbinas + "\n numroPasajeros :\n" + numroPasajeros + "\n costoDeVuelo \n" + costoDeVuelo + "\n numeroTripulantes \n" + numeroTripulantes + "\n alturaDeVuelo :\n" + alturaDeVuelo + '}';
+        return "\nMEDIO TRANSPORTE AEREO{ \n" + "\nNUMERO TRUBINAS:\n" + numeroTurbinas + "\nNÚMERO PASAJEROS :\n" + numroPasajeros + "\nCOSTO DE VUELO :\n" + costoDeVuelo + "\nNUEMERO DE TRIPULANTES :\n" + numeroTripulantes + "\nALTURA DE VUELO :\n" + alturaDeVuelo + '}';
     }
     
       

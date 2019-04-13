@@ -11,4 +11,7 @@ package ec.edu.ups.interfaces;
  */
 public interface Interface {
     
+    
+    public abstract String volando();
+    public abstract String aterrizando();
 }

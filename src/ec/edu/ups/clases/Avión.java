@@ -15,13 +15,23 @@ public abstract class Avión extends MedioTransporteAereo{
 
     private int numeroDeAlas;
     private int numeroDeAzafatas;
-    private double horasServicioDeCommida;
+    private String horasServicioDeCommida;
     private String categoriaSocial;
 
     public  Avión() {
         
     }
-    public Avión(int numeroDeAlas, int numeroDeAzafatas, double horasServicioDeCommida, String categoriaSocial, int numeroTurbinas, int numroPasajeros, double costoDeVuelo, int numeroTripulantes, double alturaDeVuelo) {
+
+    public Avión(int numeroDeAlas, int numeroDeAzafatas, String horasServicioDeCommida, String categoriaSocial) {
+        this.numeroDeAlas = numeroDeAlas;
+        this.numeroDeAzafatas = numeroDeAzafatas;
+        this.horasServicioDeCommida = horasServicioDeCommida;
+        this.categoriaSocial = categoriaSocial;
+    }
+    
+    
+    
+    public Avión(int numeroDeAlas, int numeroDeAzafatas, String horasServicioDeCommida, String categoriaSocial, int numeroTurbinas, int numroPasajeros, String costoDeVuelo, int numeroTripulantes, String alturaDeVuelo) {
         super(numeroTurbinas, numroPasajeros, costoDeVuelo, numeroTripulantes, alturaDeVuelo);
         this.numeroDeAlas = numeroDeAlas;
         this.numeroDeAzafatas = numeroDeAzafatas;
@@ -37,7 +47,7 @@ public abstract class Avión extends MedioTransporteAereo{
         this.numeroDeAzafatas = azapatas;
     }
 
-    public void setHorasServicioDeCommida(double horasServicioDeCommida) {
+    public void setHorasServicioDeCommida(String horasServicioDeCommida) {
         this.horasServicioDeCommida = horasServicioDeCommida;
     }
 
@@ -53,7 +63,7 @@ public abstract class Avión extends MedioTransporteAereo{
         return numeroDeAzafatas;
     }
 
-    public double getHorasServicioDeCommida() {
+    public String getHorasServicioDeCommida() {
         return horasServicioDeCommida;
     }
 
@@ -63,10 +73,11 @@ public abstract class Avión extends MedioTransporteAereo{
     
     public abstract String aterrizar();
 
+   
     @Override
     public String toString() {
-        return super.toString() +" \n Avi\u00f3n{ \n" + "\n numeroDeAlas :\n" + numeroDeAlas + "\n numeroDeAzafatas :\n" + numeroDeAzafatas + "\n horasServicioDeCommida \n" + horasServicioDeCommida + "\n categoriaSocial :\n" + categoriaSocial + '}';
+        System.out.println();
+        return super.toString() +" \n AVIÓN{ \n" + "\nNÚMERO DE ALAS :\n" + numeroDeAlas + "\nNÚMERO DE AZAFATAS :\n" + numeroDeAzafatas + "\nHORAS DE SERVICIO DE COMIDA :\n" + horasServicioDeCommida + "\nCATEGORIA SOCIAL :\n" + categoriaSocial + '}';
     }
 
 }
-

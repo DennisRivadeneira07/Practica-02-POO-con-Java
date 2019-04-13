@@ -13,7 +13,7 @@ import ec.edu.ups.interfaces.Interface;
  */
 public class AviónMilitar extends Avión implements Interface {
 
-    private double pesoArmas;
+    private String pesoArmas;
     private int nuemeroArmasEnUnidades;
     private String tipoDeArmas;
     private String nombreDeFrancoTirador;
@@ -22,7 +22,7 @@ public class AviónMilitar extends Avión implements Interface {
 
     }
 
-    public AviónMilitar(double pesoArmas, int nuemeroArmasEnUnidades, String tipoDeArmas, String nombreDeFrancoTirador, int numeroDeAlas, int numeroDeAzafatas, double horasServicioDeCommida, String categoriaSocial, int numeroTurbinas, int numroPasajeros, double costoDeVuelo, int numeroTripulantes, double alturaDeVuelo) {
+    public AviónMilitar(String pesoArmas, int nuemeroArmasEnUnidades, String tipoDeArmas, String nombreDeFrancoTirador, int numeroDeAlas, int numeroDeAzafatas, String horasServicioDeCommida, String categoriaSocial, int numeroTurbinas, int numroPasajeros, String costoDeVuelo, int numeroTripulantes, String  alturaDeVuelo) {
         super(numeroDeAlas, numeroDeAzafatas, horasServicioDeCommida, categoriaSocial, numeroTurbinas, numroPasajeros, costoDeVuelo, numeroTripulantes, alturaDeVuelo);
         this.pesoArmas = pesoArmas;
         this.nuemeroArmasEnUnidades = nuemeroArmasEnUnidades;
@@ -30,14 +30,14 @@ public class AviónMilitar extends Avión implements Interface {
         this.nombreDeFrancoTirador = nombreDeFrancoTirador;
     }
 
-    public AviónMilitar(double pesoArmas, int nuemeroArmasEnUnidades, String tipoDeArmas, String nombreDeFrancoTirador) {
+    public AviónMilitar(String pesoArmas, int nuemeroArmasEnUnidades, String tipoDeArmas, String nombreDeFrancoTirador) {
         this.pesoArmas = pesoArmas;
         this.nuemeroArmasEnUnidades = nuemeroArmasEnUnidades;
         this.tipoDeArmas = tipoDeArmas;
         this.nombreDeFrancoTirador = nombreDeFrancoTirador;
     }
 
-    public void setPesoArmas(double pesoArmas) {
+    public void setPesoArmas(String pesoArmas) {
         this.pesoArmas = pesoArmas;
     }
 
@@ -53,7 +53,7 @@ public class AviónMilitar extends Avión implements Interface {
         this.nombreDeFrancoTirador = nombreDeFrancoTirador;
     }
 
-    public double getPesoArmas() {
+    public String getPesoArmas() {
         return pesoArmas;
     }
 
@@ -85,8 +85,10 @@ public class AviónMilitar extends Avión implements Interface {
 
     @Override
     public String toString() {
-        return super.toString() + " \n Avi\u00f3nMilitar{\n" + "pesoArmas : \n" + pesoArmas + "\n nuemeroArmasEnUnidades=\n" + nuemeroArmasEnUnidades + "\n tipoDeArmas=\n" + tipoDeArmas + "\n nombreDeFrancoTirador=\n" + nombreDeFrancoTirador + '}';
+        System.out.println();
+        return super.toString() + " \n Avi\u00f3nMilitar{\n" + "PESO DE ARMAS :\n" + pesoArmas + "\nNÚMERO DE ARMAS EN UNIDADES :\n" + nuemeroArmasEnUnidades + "\nTIPO DE ARMAS :\n" + tipoDeArmas + "\nNOMBRE DE FRANCOTIRADOR :\n" + nombreDeFrancoTirador + '}';
     }
 
   
 }
+

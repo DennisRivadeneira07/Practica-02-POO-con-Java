@@ -2,6 +2,10 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package ec.edu.ups.clases;
 
@@ -13,16 +17,16 @@ import ec.edu.ups.interfaces.Interface;
  */
 public class HelicopteroGrua extends Helicoptero implements Interface {
    
-   private double LargoCableGrua;
-   private double capacidadGrua;
+   private String LargoCableGrua;
+   private String capacidadGrua;
    private int numeroGruas;
-   private double tamañoGanchoGrua;
+   private String tamañoGanchoGrua;
    
    public HelicopteroGrua(){
        
    }
 
-    public HelicopteroGrua(double LargoCableGrua, double capacidadGrua, int numeroGruas, double tamañoGanchoGrua, int númeroDeHelices, int codigoPatinAterrizaje, int codigoAletaDesviación, String marcaRotorAntipar, int numeroTurbinas, int numroPasajeros, double costoDeVuelo, int numeroTripulantes, double alturaDeVuelo) {
+    public HelicopteroGrua(String LargoCableGrua, String capacidadGrua, int numeroGruas, String tamañoGanchoGrua, int númeroDeHelices, int codigoPatinAterrizaje, int codigoAletaDesviación, String marcaRotorAntipar, int numeroTurbinas, int numroPasajeros, String costoDeVuelo, int numeroTripulantes, String alturaDeVuelo) {
         super(númeroDeHelices, codigoPatinAterrizaje, codigoAletaDesviación, marcaRotorAntipar, numeroTurbinas, numroPasajeros, costoDeVuelo, numeroTripulantes, alturaDeVuelo);
         this.LargoCableGrua = LargoCableGrua;
         this.capacidadGrua = capacidadGrua;
@@ -30,17 +34,17 @@ public class HelicopteroGrua extends Helicoptero implements Interface {
         this.tamañoGanchoGrua = tamañoGanchoGrua;
     }
 
-    public HelicopteroGrua(double LargoCableGrua, double capacidadGrua, int numeroGruas, double tamañoGanchoGrua) {
+    public HelicopteroGrua(String LargoCableGrua, String capacidadGrua, int numeroGruas, String tamañoGanchoGrua) {
         this.LargoCableGrua = LargoCableGrua;
         this.capacidadGrua = capacidadGrua;
         this.numeroGruas = numeroGruas;
         this.tamañoGanchoGrua = tamañoGanchoGrua;
     }
-    public void setLargoCableGrua(double LargoCableGrua) {
+    public void setLargoCableGrua(String LargoCableGrua) {
         this.LargoCableGrua = LargoCableGrua;
     }
 
-    public void setCapacidadGrua(double capacidadGrua) {
+    public void setCapacidadGrua(String capacidadGrua) {
         this.capacidadGrua = capacidadGrua;
     }
 
@@ -48,15 +52,15 @@ public class HelicopteroGrua extends Helicoptero implements Interface {
         this.numeroGruas = numeroGruas;
     }
 
-    public void setTamañoGanchoGrua(double tamañoGanchoGrua) {
+    public void setTamañoGanchoGrua(String tamañoGanchoGrua) {
         this.tamañoGanchoGrua = tamañoGanchoGrua;
     }
 
-    public double getLargoCableGrua() {
+    public String getLargoCableGrua() {
         return LargoCableGrua;
     }
 
-    public double getCapacidadGrua() {
+    public String getCapacidadGrua() {
         return capacidadGrua;
     }
 
@@ -64,7 +68,7 @@ public class HelicopteroGrua extends Helicoptero implements Interface {
         return numeroGruas;
     }
 
-    public double getTamañoGanchoGrua() {
+    public String getTamañoGanchoGrua() {
         return tamañoGanchoGrua;
     }
    @Override
@@ -84,11 +88,11 @@ return "Este Helicoptero esta volando";
     
     @Override
     public String toString() {
-        return super.toString()+"\n HelicopteroGrua{ \n" + "\n LargoCableGrua :\n" + LargoCableGrua + "\n capacidadGrua :\n" + capacidadGrua + "\n numeroGruas :\n" + numeroGruas + "\n tama\u00f1oGanchoGrua :\n" + tamañoGanchoGrua + '}';
+        System.out.println();
+        return super.toString()+"\n HelicopteroGrua{ \n" + "\nLARGO DE CABLE DE GRUA :\n" + LargoCableGrua + "\nCAPACIDAD DE GRUA :\n" + capacidadGrua + "\nNÚMERO DE GRUAS :\n" + numeroGruas + "\nTAMAÑO DE GANCHO DE GRUA :\n" + tamañoGanchoGrua + '}';
     }
 
 
  }
    
    
-
