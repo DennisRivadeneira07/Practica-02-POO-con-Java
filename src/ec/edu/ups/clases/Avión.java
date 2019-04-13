@@ -8,8 +8,15 @@ package ec.edu.ups.clases;
 import java.util.Date;
 
 /**
- *
- * @author LENOVO
+ *Avón 
+ * 
+ * Clase padre hereda a dos hijas. 
+ * 
+ * @author Dennnis Andrés Rivadeneira Cabrera
+ * @since 2019
+ * @version 2.0
+ * @see 
+ * https://github.com/DennisRivadeneira07/Practica-02-POO-con-Java.git
  */
 public abstract class Avión extends MedioTransporteAereo{
 
