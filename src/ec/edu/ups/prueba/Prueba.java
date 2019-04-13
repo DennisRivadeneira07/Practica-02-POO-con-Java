@@ -16,8 +16,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author LENOVO
+ *Prueba 
+ * 
+ * En la clase prueba llamamos a todas las clases hijas , impportamos
+ * mandamos los datos requeridos en cada metodo ,creamos una lista con los objetos de la clases hija y
+ * atraves de un InstansOf para verificar que el objeto es del tipo de la clase de la clase abuelo,en si esta clase 
+ * nos permitira imprimir todos los datos que creamos en los metodos .
+  * 
+ * @author Dennnis Andrés Rivadeneira Cabrera
+ * @since 2019
+ * @version 2.0
+ * @see https://github.com/DennisRivadeneira07/Practica-02-POO-con-Java.git
  */
 public class Prueba {
 
