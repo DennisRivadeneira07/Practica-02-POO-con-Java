@@ -5,10 +5,88 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Interface;
+
 /**
  *
  * @author LENOVO
  */
-public class HelicopteroMilitar {
-    
+public class HelicopteroMilitar extends Helicoptero implements Interface {
+
+    private int numeroArmasEquipadasUnidades;
+    private String tipoHelicopteroMilitar;
+    private String nombreFrancoTirador;
+    private int cantidadDeMilitaresTransportados;
+
+    public HelicopteroMilitar() {
+
+    }
+
+    public HelicopteroMilitar(int numeroArmasEquipadasUnidades, String tipoHelicopteroMilitar, String nombreFrancoTirador, int cantidadDeMilitaresTransportados, int númeroDeHelices, int codigoPatinAterrizaje, int codigoAletaDesviación, String marcaRotorAntipar, int numeroTurbinas, int numroPasajeros, double costoDeVuelo, int numeroTripulantes, double alturaDeVuelo) {
+        super(númeroDeHelices, codigoPatinAterrizaje, codigoAletaDesviación, marcaRotorAntipar, numeroTurbinas, numroPasajeros, costoDeVuelo, numeroTripulantes, alturaDeVuelo);
+        this.numeroArmasEquipadasUnidades = numeroArmasEquipadasUnidades;
+        this.tipoHelicopteroMilitar = tipoHelicopteroMilitar;
+        this.nombreFrancoTirador = nombreFrancoTirador;
+        this.cantidadDeMilitaresTransportados = cantidadDeMilitaresTransportados;
+    }
+
+    public HelicopteroMilitar(int numeroArmasEquipadasUnidades, String tipoHelicopteroMilitar, String nombreFrancoTirador, int cantidadDeMilitaresTransportados) {
+        this.numeroArmasEquipadasUnidades = numeroArmasEquipadasUnidades;
+        this.tipoHelicopteroMilitar = tipoHelicopteroMilitar;
+        this.nombreFrancoTirador = nombreFrancoTirador;
+        this.cantidadDeMilitaresTransportados = cantidadDeMilitaresTransportados;
+    }
+
+    public void setNumeroArmasEquipadasUnidades(int numeroArmasEquipadasUnidades) {
+        this.numeroArmasEquipadasUnidades = numeroArmasEquipadasUnidades;
+    }
+
+    public void setTipoHelicopteroMilitar(String tipoHelicopteroMilitar) {
+        this.tipoHelicopteroMilitar = tipoHelicopteroMilitar;
+    }
+
+    public void setNombreFrancoTirador(String nombreFrancoTirador) {
+        this.nombreFrancoTirador = nombreFrancoTirador;
+    }
+
+    public void setCantidadDeMilitaresTransportados(int cantidadDeMilitaresTransportados) {
+        this.cantidadDeMilitaresTransportados = cantidadDeMilitaresTransportados;
+    }
+
+    public int getNumeroArmasEquipadasUnidades() {
+        return numeroArmasEquipadasUnidades;
+    }
+
+    public String getTipoHelicopteroMilitar() {
+        return tipoHelicopteroMilitar;
+    }
+
+    public String getNombreFrancoTirador() {
+        return nombreFrancoTirador;
+    }
+
+    public int getCantidadDeMilitaresTransportados() {
+        return cantidadDeMilitaresTransportados;
+    }
+
+    @Override
+    public String volar() {
+        return "esta volando"; 
+    }
+ @Override
+    public String volando() {
+   return "Este Helicoptero esta volando";
+    }
+
+    @Override
+    public String aterrizando() {
+    return "Este helicoptero esta aterrizando";    
+    }
+    @Override
+    public String toString() {
+        return super.toString() + "\n HelicopteroMilitar{ \n" + "\n numeroArmasEquipadasUnidades : \n" + numeroArmasEquipadasUnidades + "\n tipoHelicopteroMilitar: \n" + tipoHelicopteroMilitar + "\n nombreFrancoTirador :\n" + nombreFrancoTirador + "\n cantidadDeMilitaresTransportados :\n" + cantidadDeMilitaresTransportados + '}';
+    }
+
+   
+
 }
