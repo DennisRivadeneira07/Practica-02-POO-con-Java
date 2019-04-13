@@ -8,8 +8,14 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaces.Interface;
 
 /**
- *
- * @author LENOVO
+ *AviónDeCarga 
+ * 
+ * Clase hija de de la clase Avión 
+ * 
+ * @author Dennnis Andrés Rivadeneira Cabrera
+ * @since 2019
+ * @version 2.0
+ * @see https://github.com/DennisRivadeneira07/Practica-02-POO-con-Java.git
  */
 public class AviónDeCarga extends Avión implements Interface {
     private String pesoDeCarga;
